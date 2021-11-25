@@ -1,0 +1,209 @@
+.main-class {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    height: 100%;
+
+}
+
+.cart {
+    visibility: hidden;
+}
+
+.main-class {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    height: 100%;
+
+}
+
+.page {
+    background-color: #282935;
+    border-radius: 7px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.product-image img {
+    height: 88%;
+    width: 77%;
+    margin-left: 11%;
+    margin-top: 5%;
+}
+
+.simple-description {
+    color: wheat;
+    margin-left: 5%;
+}
+
+body {
+    height: 100vh;
+}
+
+.intro-presentation {
+    width: 100%;
+
+    height: fit-content;
+}
+
+.presentation-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.presentation-images img {
+    width: 94%;
+    padding: 10px;
+
+    margin-left: 15px;
+}
+
+.description {
+    background-color: #282935;
+    border-radius: 7px;
+    color: #f5deb3;
+    text-align: justify;
+    margin-top: 2%;
+
+}
+
+.description p {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.description h3 {
+    margin-left: 5px;
+}
+
+.make-a-bid {
+    width: 258px;
+    height: 95px;
+    font-size: 34px;
+    color: #f5deb3;
+    background-color: black;
+}
+
+.make-a-bid:hover {
+    background-color: #b70c74;;
+}
+
+.number-input {
+    width: 50%;
+    height: 95px;
+    font-size: 44px;
+    color: #f5deb3;
+}
+
+.number-input:hover {
+    background-color: black;
+}
+
+@media screen and (min-width: 767px) {
+    .simple-description {
+        font-size: 34px;
+    }
+
+    .description p {
+        font-size: 30px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .description h3 {
+        margin-left: 7px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+
+    .product-image {
+        margin-left: 5%
+
+    }
+
+    .product-image img {
+        height: 88%;
+        width: 77%;
+        margin-left: 19%;
+    }
+
+    .simple-description {
+        color: wheat;
+        margin-left: 5%;
+        font-size: 21px;
+    }
+
+    .intro-presentation {
+        width: 100%;
+        display: flex;
+    }
+
+    .presentation-images {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .presentation-images img {
+
+        width: 24%;
+        display: flex;
+        padding: 5px;
+        margin-left: 0;
+    }
+
+    .description {
+        background-color: #282935;
+        border-radius: 7px;
+        color: #f5deb3;
+        text-align: justify;
+        margin-top: 2%;
+
+    }
+
+    .description p {
+        margin-left: 2%;
+        margin-right: 2%;
+        font-size: 20px;
+    }
+
+    .description h3 {
+        margin-left: 5px;
+    }
+
+    .make-a-bid {
+        width: 166px;
+        height: 45px;
+        font-size: 20px;
+        color: #f5deb3;
+        background-color: black;
+    }
+
+    .make-a-bid:hover {
+        background-color: #b70c74;;
+    }
+
+    .number-input {
+        width: 50%;
+        height: 45px;
+        font-size: 20px;
+        color: #f5deb3;
+    }
+
+    .number-input:hover {
+        background-color: black;
+    }
+}

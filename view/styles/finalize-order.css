@@ -1,0 +1,50 @@
+.content-finalize{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    background: #242431;
+    border-radius: 15px;
+    border: #b70c74 1px solid;
+    height: 100vh;
+    margin-bottom: 10px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.single-product-in-final-order{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h3{
+    align-self: flex-end;
+    margin-right: 30%;
+    font-size: 40px;
+}
+
+h4{
+    font-size: 30px;
+}
+
+.shipping-service{
+    display: flex;
+    flex-direction: row;
+}
+
+.shipping-service{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.place-order{
+    width: 30%;
+    color: #f5deb3;
+    align-self: center;
+    font-size: 40px;
+    background: #13141d;
+}

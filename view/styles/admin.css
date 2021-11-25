@@ -1,0 +1,382 @@
+.modal .form-group{
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+.card{
+  border: 0;
+  background-color: #fff;
+  width: 28%;
+  height: 178px;
+  display: block;
+  border-radius: 26px;
+  margin-left:2%;
+}
+.bg-gradient{
+
+  background-image: linear-gradient(to right, #84d9d2, #07cdae) !important;
+}
+.bg-gradient2{
+  background: linear-gradient(to right, #ffbf96, #fe7096) !important;
+  
+}
+.bg-gradient3{
+  background: linear-gradient(to right, #90caf9, #047edf 99%) !important;
+  
+}
+
+.card .card-img-holder{
+  position: relative;
+
+
+}
+.card .text-white{
+  margin-left: 10%;
+  color:#fff;
+  font-family: "ubuntu-regular", sans-serif;
+  font-weight: 400 !important;
+  margin-bottom: 1rem !important;
+  font-size:20px;
+}
+.card .text-white2{
+  margin-left: 20%;
+  color:#fff;
+  font-family: "ubuntu-regular", sans-serif;
+  font-weight: 400 !important;
+  margin-bottom: 1rem !important;
+}
+.card .cart-body{
+padding: 2.5rem 2.5rem;
+height:100% ;
+
+}
+.card .card-img-holder .image-absolute{
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 26px;
+  height: 131%;
+  width: 57%;
+}
+.card-body{
+  /* -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto; */
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+.cart{
+    display: none;
+}
+aside{
+    position: relative;
+    margin:0;
+    background: #282935;;
+     display: flex;
+     flex-direction: column;
+     width: 34%;
+   color:wheat;
+    
+     border-radius: 30px;
+}
+.main-class{
+    display: flex;
+    align-items: stretch;
+        height: 100%;
+    
+}
+.page{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+  
+    
+    margin-left: 3em;
+}
+main{
+    display: flex;
+   
+}
+
+.side-filters h4{
+    margin-left: 10px;
+}
+.adminButton{
+    color: #f5deb3;
+    padding: 5%;
+    background-color: #2f3030;
+    font-size: 29px;
+    width:86%;
+}
+.adminImage{
+border-radius: 50%;
+margin-left: 10px;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    padding: 5%;
+}
+.view{
+    display: flex;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.row img{
+    margin-left: 12px;
+    padding: 5px;
+    width: 92%;
+    border-radius: 14px;
+}
+.row-2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.row-2 img{
+    width: 100%;
+    padding: 10px;
+    border-radius: 19px;
+}
+/**********form************/
+.backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+  }
+  .backdrop.hide {
+    display: none;
+  }
+  .backdrop.show {
+    display: flex;
+  }
+  .modal {
+    overflow: scroll;
+    width: 80%;
+    position: relative;
+    padding: 1em;
+    box-shadow: 0 1px 2px 0 rgb(9 30 66 / 25%);
+    background-color: #282935;
+    border-radius: 7px;
+    border: 1px solid #b70c74;
+    color: #f5deb3;
+    font-size: 39px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+  }
+  
+  .modal .title {
+    margin-bottom: 1em;
+  }
+  .modal label{
+    width: 100%;
+  }
+  .modal input,
+  .modal select {
+    background-color:#2f3030;
+    color: wheat;
+    border: 1px #ddd solid;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    width: 70%;
+    padding: 1em;
+  }
+  
+  .modal .btn-remove {
+    border: none;
+    padding: 1em;
+   
+    color:#f5deb3;
+    cursor: pointer;
+  }
+button{
+   color: #f5deb3;
+   font-size: 36px;
+}
+
+
+.close {
+position: absolute;
+top: 1em;
+right: 1em;
+cursor: pointer;
+}
+.image-close{
+
+    width: 90px;
+    border-radius: 3px;
+
+
+}
+@media screen and (min-width: 1025px) {
+    aside{
+        position: relative;
+        margin:0;
+        background: #282935;;
+         display: flex;
+         flex-direction: column;
+         width: 15%;
+       color:wheat;
+        
+         border-radius: 30px;
+    }
+    .main-class{
+        display: flex;
+        align-items: stretch;
+            height: 100%;
+        
+    }
+    .page{
+        flex:1;
+        display: flex;
+        flex-direction: column;
+      
+        
+        margin-left: 3em;
+    }
+    main{
+        display: flex;
+        height: 100%;
+    }
+
+ 
+    .adminButton{
+        color: #f5deb3;
+        padding: 5%;
+        background-color: #2f3030;
+        font-size: 18px;
+        width: 83%;
+    
+    }
+    .adminImage{
+    border-radius: 50%;
+    margin-left: 10px;
+    }
+    ul{
+        list-style-type: none;
+    }
+    li{
+        padding: 5%;
+    }
+    .view{
+        display: flex;
+    }
+    .row{
+      width: 100%;
+        display: flex;
+        flex-direction: row;
+    
+    }
+    .row img{
+        margin-left: 12px;
+        padding: 5px;
+        width: 30%;
+        border-radius: 14px;
+    }
+    .row-2{
+        width: 96%;
+    height: 71%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+    }
+    .row-2 img{
+        width: 49%;
+        padding: 10px;
+        border-radius: 19px;
+    } 
+    /*********************************************************************************************/
+    .backdrop {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        align-items: center;
+        justify-content: center;
+      }
+      .backdrop.hide {
+        display: none;
+      }
+      .backdrop.show {
+        display: flex;
+      }
+      .modal {
+        height: 60%;
+        width: 764px;
+        position: relative;
+        padding: 1em;
+        box-shadow: 0 1px 2px 0 rgb(9 30 66 / 25%);
+        background-color: #282935;
+        border-radius: 7px;
+        border: 1px solid #b70c74;
+        color: #f5deb3;
+        font-size: 20px;
+      }
+      
+      .close {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        cursor: pointer;
+      }
+      
+      .modal .title {
+        margin-bottom: 1em;
+      }
+      
+      .modal input,
+      .modal select {
+       
+        border: 1px #ddd solid;
+        border-radius: 5px;
+        margin-bottom: 1em;
+        width: 70%;
+        padding: 1em;
+      }
+      
+      .modal .btn-remove {
+        border: none;
+        padding: 1em;
+        background-color:black;
+        color:#f5deb3;
+        cursor: pointer;
+      }
+    button{
+       color: #f5deb3;
+       font-size: 19px;
+    }
+    
+    
+    .close {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+    }
+    .image-close{
+    
+        width: 58px;
+        border-radius: 3px;
+    
+}
+
+
+
+}

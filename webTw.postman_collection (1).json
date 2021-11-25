@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "5cd4e42e-4a24-45bd-baa7-57241d657d77",
+		"name": "webTw",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getproducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/game/controller/productIndex.php/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"game",
+						"controller",
+						"productIndex.php",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/game/controller/index.php/product?name=Tichu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"game",
+						"controller",
+						"index.php",
+						"product"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Tichu"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\":\"Europoils\",\r\n\"type\":\"board\",\r\n\"picture_name\":\"europoils.jpg\",\r\n\"price\":\"100\",\r\n\"category\":\"strategy\",\r\n\"age_target\":10,\r\n\"rating\":9.5,\r\n\"productYear\":2010,\r\n\"inStock\":20\r\n\r\n\r\n\r\n\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/game/controller/productIndex.php/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"game",
+						"controller",
+						"productIndex.php",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/game/controller/productIndex.php/product/16",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"game",
+						"controller",
+						"productIndex.php",
+						"product",
+						"16"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modify product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numberSelles\":100,\r\n\"inStock\":100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/game/controller/productIndex.php/product/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"game",
+						"controller",
+						"productIndex.php",
+						"product",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Product by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/game/controller/productIndex.php/product/El Grande",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"game",
+						"controller",
+						"productIndex.php",
+						"product",
+						"El Grande"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

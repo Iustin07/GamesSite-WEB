@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Documentation</title>
+</head>
+
+<body>
+
+    <article>
+        <header>
+            <h1>
+                Game Changer
+            </h1>
+        </header>
+
+        <div role="contentinfo">
+            <section typeof="sa:AuthorsList">
+                <h2>Authors</h2>
+                <ul>
+                    <li typeof="sa:ContributorRole" property="schema:author">
+                        <span typeof="schema:Person">
+                            <meta property="schema:givenName" content="Paula">
+                            <meta property="schema:additionalName" content="Luiza">
+                            <meta property="schema:familyName" content="Balint">
+                            <span property="schema:name">Paula L. Balint</span>
+                        </span>
+                        <ul>
+                            <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                                <a href="mailto:paula.balint@info.uaic.ro"
+                                    property="schema:email">paula.balint@info.uaic.ro</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li typeof="sa:ContributorRole" property="schema:author">
+                        <span typeof="schema:Person">
+                            <meta property="schema:givenName" content="Daniel">
+                            <meta property="schema:additionalName" content="Iustin">
+                            <meta property="schema:familyName" content="Bodnariu">
+                            <span property="schema:name">Daniel I. Bodnariu</span>
+                        </span>
+                        <ul>
+                            <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                                <a href="mailto:daniel.bodnariu@info.uaic.ro"
+                                    property="schema:email">daniel.bodnariu@info.uaic.ro</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </section>
+        </div>
+
+        <section>
+            <h3>1. Introduction</h3>
+            <section>
+                <h4>1.1 Purpose</h4>
+                <p>
+                    The purpose of this document is to present a detailed description of the web application
+                    Game Changer based on the project ONT. It will explain the purpose and features of the software, the
+                    interfaces of the software, what the software will do and the constraints under which
+                    it must operate. This document is intended for the potential users of the software.
+                </p>
+            </section>
+
+            <section>
+                <h4>1.2 Document Conventions</h4>
+                <p>
+                    This Document was created based on the IEEE template for System Requirement
+                    Specification Documents.
+                </p>
+            </section>
+
+            <section>
+                <h4>1.3 Intended Audience and Reading Suggestions</h4>
+                <p>
+                    Normal users who wish to use the application for finding board games.
+                </p>
+            </section>
+
+            <section>
+                <h4>1.4 Product Scope</h4>
+                <p>
+                    Game Changer has been developed for the purpose of selling board games and auctioning collectible
+                    games,
+                    for all age categories.
+                </p>
+            </section>
+
+            <section>
+                <h4>1.5 References</h4>
+                <ol>
+                    <li typeof="schema:WebPage" role="doc-biblioentry"
+                        resource="https://github.com/paulabalint/Tehnologii-Web.git" property="schema:citation">
+                        <cite property="schema:name">
+                            <a href="https://github.com/paulabalint/Tehnologii-Web.git">Game Changer's Github page</a>
+                        </cite>
+                    </li>
+                    <li typeof="schema:WebPage" role="doc-biblioentry"
+                        resource="https://github.com/rick4470/IEEE-SRS-Tempate#42-system-feature-2-and-so-on"
+                        property="schema:citation">
+                        <cite property="schema:name">
+                            <a href="https://github.com/rick4470/IEEE-SRS-Tempate#42-system-feature-2-and-so-on">IEEE
+                                Template for System Requirements Specification Documents</a>
+                        </cite>
+                    </li>
+                </ol>
+            </section>
+
+
+
+        </section>
+
+        <section>
+            <h3>2. Overall Description</h3>
+            <section>
+                <h4>2.1 Product Description</h4>
+                <p>
+                    The Game Changer web application, based on the porject ONT,
+                    has been developed for those that wish to visualize data about
+                    different board games and for those that wish to buy and
+                    bid for these products.
+                </p>
+            </section>
+
+            <section>
+                <h4>2.2 Product Functions</h4>
+                <p>
+                    The web application manages family games. These games have associated data such as category, number
+                    of
+                    players, type, release year. The system offers support for buying and auctioning these products. The
+                    admin is offered with support for managing users.
+                    The application offers the option of exporting different statistics in formats such as CSV, WebP and
+                    PDF.
+                </p>
+                <p>Home page : central point of navigation to the rest of the pages within the website</p>
+                <ul>
+                    <li>
+                        my account : redirects to a login page
+                    </li>
+                    <li>
+                        search website : a way for users to search for a product quick
+                    </li>
+                    <li>
+                        go : executes the search and returns the result
+                    </li>
+                </ul>
+
+                SignIn page :
+                <ul>
+                    <li>
+                        remember me : stores the credentials so that the user won’t have to re-enter them the next time
+                        he
+                        visits
+                    </li>
+                    <li>
+                        login : finalizes the login action, logging the user if the credentials are correct and then
+                        redirects the user to the main page
+                    </li>
+                    <li>
+                        create account : redirects to a sign up page
+                    </li>
+                    <li>
+                </ul>
+
+                SignUp page :
+                <ul>
+                    <li>
+                        create account : creates the user account if the information entered is valid and then redirects
+                        to
+                        the home page
+                    </li>
+                </ul>
+
+                Games :
+
+                <ul>
+                    <li>
+                        add to cart : adds the selected product into the cart with the default amount value of 1
+                    </li>
+                    <li>
+                        open cart : opens the shopping cart
+                    </li>
+                    <li>
+                        open cart -> remove : removes item from cart
+                    </li>
+                    <li>
+                        open cart -> change quantity : changes the quantity of an item from cart
+                    </li>
+                    <li>
+                        open cart -> purchase : finalizes the order and clears the cart
+                    </li>
+                    <li>
+                        open cart -> close cart : closes the cart
+                    </li>
+                    <li>
+                        age category : returns the games that are in the selected age category
+                    </li>
+                    <li>
+                        number of players : returns the games that can be played in the selected number of players
+                    </li>
+                    <li>
+                        game type : returns the games that are in the selected game type
+                    </li>
+                </ul>
+
+                Auction :
+                <ul>
+                    <li>
+                        bid : opens a new page where details about the current bidding are offered
+                    </li>
+                    <li>
+                        bid ->your bid : place for writing the desired bidding sum
+                    </li>
+                    <li>
+                        bid -> make a bid : places the bid
+                    </li>
+                </ul>
+
+                Contact :
+                <ul>
+                    <li>
+                        send : sends the message after the text areas are validated and redirects the user/guest to the
+                        main
+                        page
+                    </li>
+                </ul>
+
+
+            </section>
+
+            <section>
+                <h4>2.3 User Classes and Characteristics</h4>
+                <ul>
+                    <li>
+                        Guest : simple viewer of the website
+                    </li>
+                    <li>
+                        User : user with an associated account that can buy and bid for products
+                    </li>
+                    <li>
+                        Admin : has the option of managing different website aspects
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h4>2.4 Operating Environment</h4>
+                <p>
+                    The developed product can be used on any device with a connection to the Internet and a browser
+                    installed.
+                </p>
+            </section>
+
+            <section>
+                <h4>2.5 Design and Implementation Constraints</h4>
+                <p>
+                    Game Changer will be developed in Php and uses html, css and javascript for its visualization
+                    engine.
+                </p>
+            </section>
+
+        </section>
+
+        <section>
+            <h3>3. External Interface Requirements</h3>
+
+            <section>
+                <h4>3.1 User Interfaces</h4>
+
+                <section>
+                    <figure typeof="sa:image">
+                        <figcaption>Game Changer's Home page</figcaption>
+                        <img src="../documentation_shots/main.PNG" alt="main page screenshot" width="70%">
+                    </figure>
+
+                    <figure typeof="sa:image">
+                        <figcaption>Game Changer's Login page</figcaption>
+                        <img src="../documentation_shots/sign_in.PNG" alt="login page screenshot" width="70%">
+                    </figure>
+
+                    <figure typeof="sa:image">
+                        <figcaption>Game Changer's SignUp page</figcaption>
+                        <img src="../documentation_shots/sign_up.PNG" alt="sign up page screenshot" width="70%">
+                    </figure>
+
+                    <figure typeof="sa:image">
+                        <figcaption>Game Changer's Games page</figcaption>
+                        <img src="../documentation_shots/games.PNG" alt="products page screenshot" width="70%">
+                    </figure>
+
+                    <figure typeof="sa:image">
+                        <figcaption>Game Changer's Cart</figcaption>
+                        <img src="../documentation_shots/cart.PNG" alt="cart screenshot" width="70%">
+                    </figure>
+
+                    <figure typeof="sa:image">
+                        <figcaption>Game Changer's Contact page</figcaption>
+                        <img src="../documentation_shots/contact.PNG" alt="contact page screenshot" width="70%">
+                    </figure>
+
+                    <figure typeof="sa:image">
+                        <figcaption>Game Changer's Auction page</figcaption>
+                        <img src="../documentation_shots/auction.PNG" alt="auction page screenshot" width="70%">
+                    </figure>
+                </section>
+            </section>
+
+            <section>
+                <h4>3.2 Software Interfaces</h4>
+                <p>
+                    The minimum software requirements of Game Changer are a working browser and connection to the
+                    Internet.
+                </p>
+            </section>
+
+            <section>
+                <h4>3.4 Communications Interfaces</h4>
+                <p>
+                    Game changer requires Internet connection. The communication standard that is to be used is HTTP.
+                </p>
+            </section>
+
+        </section>
+
+        <section>
+            <h3>4. System Features</h3>
+
+            <section>
+                <h4>4.1 Home page</h4>
+                <p>
+                    Guests and users can read a little about the motivation behind the web app and navigate to all
+                    the other pages from this page.
+                </p>
+            </section>
+
+            <section>
+                <h4>4.2 Login page</h4>
+                <p>
+                    Users of the app can login by entering their credentials and therefore access other functionalities
+                    of the app.
+                </p>
+            </section>
+
+            <section>
+                <h4>4.3 SignUp page</h4>
+                <p>
+                    Guests can create an account and then use it to login into the application and access all the
+                    features the account existence provides.
+                </p>
+            </section>
+
+            <section>
+                <h4>4.4 Games page</h4>
+                <p>
+                    Users can view the games based on different filters, add them to the cart and then proceed to
+                    purchase them. They can also modify the cart content.
+                </p>
+            </section>
+
+            <section>
+                <h4>4.5 Auction page</h4>
+                <p>
+                    Users can view different collectible games, filter them and bid for getting into the possession of a
+                    desired game. Each game can be viewed in a different page where a short description , pictures and
+                    details about the selected game are provided.
+                </p>
+            </section>
+
+            <section>
+                <h4>4.6 Contact page</h4>
+                <p>
+                    Guests and users can send a message containing feedback or any message that they wish to send to the
+                    authors of the application.
+                </p>
+            </section>
+
+            <section>
+                <h4>4.7 Admin page</h4>
+                <p>
+                    The admin can login into the app by entering his credentials and then be redirected to the admin
+                    page
+                    where he can manage users, products and other aspects of the website.
+                </p>
+            </section>
+
+            <section>
+                <h4>4.8 Terms and Conditions page</h4>
+                <p>
+                    Guests and users can read the terms and conditions of using the website by navigating to this page.
+                </p>
+            </section>
+
+            <section>
+                <h4>4.9 How to buy</h4>
+                <p>
+                    Guests and users can find out more information about the purchasing process by visiting this page.
+                </p>
+            </section>
+        </section>
+
+        <section>
+            <h3>5. Other Nonfunctional Requirements</h3>
+
+            <section>
+                <h4>5.1 Safety Requirements</h4>
+                <p>
+                    To ensure that no one of Game Changer’s users loses any data while using the application, the dev
+                    team works on Game Changer regularly.
+                </p>
+            </section>
+
+            <section>
+                <h4>5.2 Security Requirements</h4>
+                <p>
+                    Game Changer doesn’t have any security requirements and thus any type of user can use it without any
+                    additional privileges.
+                </p>
+            </section>
+
+            <section>
+                <h4>5.3 Software Quality Attributes</h4>
+                <ul>
+                    <li>Adaptability</li>
+                    <li>Portability</li>
+                    <li>Reusability</li>
+                    <li>Availability</li>
+                    <li>Maintanability</li>
+                </ul>
+            </section>
+
+        </section>
+
+        <section>
+            <h3>Contribution</h3>
+            <section>
+                <h4>Balint Paula:</h4>
+                <ul>
+                    <li>Site design projection</li>
+                    <li>Overall site design structure</li>
+                    <li>Specific page design implementation</li>
+                    <li>Games page</li>
+                    <li>Cart</li>
+                    <li>SignIn page</li>
+                    <li>SignUp page</li>
+                    <li>Statistics page</li>
+                    <li>Documentation</li>
+                </ul>
+                <h4>Bodnariu Daniel:</h4>
+                <ul>
+                    <li>Site design projection</li>
+                    <li>Specific page design implementation</li>
+                    <li>Auction page</li>
+                    <li>Home page</li>
+                    <li>Terms and conditions page</li>
+                    <li>Contact page</li>
+                    <li>Admin page</li>
+                    <li>Statistics page</li>
+                    <li>Documentation</li>
+                </ul>
+            </section>
+        </section>
+
+
+    </article>
+
+
+
+</body>
+
+</html>

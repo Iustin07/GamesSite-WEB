@@ -1,0 +1,504 @@
+{
+	"info": {
+		"_postman_id": "1ddd8f5c-f008-4dd9-991f-1aad9976dde9",
+		"name": "TW",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "Get all users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/GameChanger/controller/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"GameChanger",
+								"controller",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/GameChanger/controller/users?email=paula.balint21@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"GameChanger",
+								"controller",
+								"users"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "paula.balint21@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FNAME\": \"Paula\",\r\n    \"LNAME\": \"Balint\",\r\n    \"EMAIL\": \"paula.balint@yahoo.com\",\r\n    \"PHONE_NUMBER\": \"0792929292\",\r\n    \"PASSWORD\": \"pass\",\r\n    \"MONEY_SPENT\": \"900\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/GameChanger/controller/users/?id=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"GameChanger",
+								"controller",
+								"users",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/GameChanger/controller/users/?id=6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"GameChanger",
+								"controller",
+								"users",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add new user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FNAME\": \"My user\",\r\n    \"LNAME\": \"OK yo\",\r\n    \"EMAIL\": \"i.think.my.email.is.cool@yahoo.com\",\r\n    \"PHONE_NUMBER\": \"0766666666\",\r\n    \"PASSWORD\": \"okei\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/GameChanger/controller/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"GameChanger",
+								"controller",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete by email",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/GameChanger/controller/users/?email=my.email@yahoo.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"GameChanger",
+								"controller",
+								"users",
+								""
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "my.email@yahoo.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch user",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"PASSWORD\": \"passwordNew\",\r\n    \"MONEY_SPENT\": \"900\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/GameChanger/controller/users/?email=i.think.my.email.is.cool@yahoo.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"GameChanger",
+								"controller",
+								"users",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "i.think.my.email.is.cool@yahoo.com"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "orders",
+			"item": [
+				{
+					"name": "Get all orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/GameChanger/controller/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"GameChanger",
+								"controller",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/GameChanger/controller/orders/?id_user=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"GameChanger",
+								"controller",
+								"orders",
+								""
+							],
+							"query": [
+								{
+									"key": "id_order",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "id_user",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_user\": \"2\",\r\n    \"payment\": \"140\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/GameChanger/controller/orders/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"GameChanger",
+								"controller",
+								"orders",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/GameChanger/controller/orders/?id_order=6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"GameChanger",
+								"controller",
+								"orders",
+								""
+							],
+							"query": [
+								{
+									"key": "id_order",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "order-content",
+			"item": [
+				{
+					"name": "Get by order id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/GameChanger/controller/orders/content?id_order=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"GameChanger",
+								"controller",
+								"orders",
+								"content"
+							],
+							"query": [
+								{
+									"key": "id_product",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "id_order",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get by product id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/GameChanger/controller/orders/content?id_product=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"GameChanger",
+								"controller",
+								"orders",
+								"content"
+							],
+							"query": [
+								{
+									"key": "id_product",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add order content",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/GameChanger/controller/orders/content/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"GameChanger",
+								"controller",
+								"orders",
+								"content",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "sessions",
+			"item": [
+				{
+					"name": "Get session by whtv",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/GameChanger/controller/sessions/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"GameChanger",
+								"controller",
+								"sessions",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "id_user",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "serial",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

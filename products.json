@@ -1,0 +1,52 @@
+{
+    "items": [
+        {
+            "sys": {
+                "id": "1"
+            },
+            "fields": {
+                "title": "Time's up",
+                "price": 12,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "./product_images/times_up.png"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "2"
+            },
+            "fields": {
+                "title": "Cortex",
+                "price": 27,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "./product-images/cortex.png"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "3"
+            },
+            "fields": {
+                "title": "Unstable Unicorns",
+                "price": 30,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "./product-images/unstable_unicorns.jpg"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

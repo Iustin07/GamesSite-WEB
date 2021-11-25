@@ -1,0 +1,51 @@
+.drop{
+    overflow: hidden;
+    float:left;
+}
+.drop .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+
+    /*background-color: inherit;*/
+    font-family: inherit; 
+    margin: 0; 
+    
+    border-radius: 20px;
+
+  }
+  .drop:hover .dropbtn {
+    background-color:#b70c74;;
+  }
+  .drop-content {
+    display: none;
+    position: absolute;
+    
+    background-color: #5f6670;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 20px;
+  }
+  
+  .drop-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 32px;
+  }
+  
+  .drop-content a:hover {
+    background-color:#90969e;
+  }
+  
+  .drop:hover .drop-content {
+    display: block;
+  }
+  .cart{
+    visibility: hidden;
+  }

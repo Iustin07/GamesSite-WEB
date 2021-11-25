@@ -1,0 +1,120 @@
+
+aside {
+    margin: 0;
+    background: #282935;
+    width: 100%;
+    height: fit-content;
+    color: wheat;
+    border-radius: 30px;
+    border: #b70c74 1px solid;
+}
+
+.account-user-name{
+    align-self: center;
+}
+
+.account-page-content{
+    margin-top: 10px;
+    display: flex;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    height: 100%;
+}
+
+.my-address{
+    margin-left: 30px;
+    color: #f5deb3;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 15px 45px 5px 5px;
+}
+
+button {
+    color: #f5deb3;
+    font-size: 40px;
+}
+
+.add-address-class button{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.account-view-options{
+    display: flex;
+    flex-direction: column;
+}
+
+.account-view-options ul{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.account-view-options ul li{
+    align-self: center;
+}
+
+h3{
+    font-size: 200%;
+}
+
+.generic-user-icon{
+    width: 15%;
+    align-self: center;
+}
+
+@media screen and (min-width: 1024px) {
+    aside {
+        position: relative;
+        margin: 0;
+        background: #282935;;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        width: 25%;
+        color: wheat;
+        border-radius: 30px;
+    }
+
+    .account-page-content {
+        display: flex;
+        align-items: stretch;
+        height: 100vh;
+    }
+
+    main {
+        display: flex;
+        height: 100%;
+    }
+
+    .account-view-options{
+        flex-direction: column;
+    }
+
+    .account-view-options ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        color: #f5deb3;
+        font-size: 20px;
+    }
+
+    .account-view-options ul li{
+        align-self: center;
+    }
+
+    .generic-user-icon{
+        width: 45%;
+        align-self: center;
+    }
+
+}

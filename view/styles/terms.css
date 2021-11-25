@@ -1,0 +1,13 @@
+.point{
+    color: burlywood;
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: justify;
+}
+
+.letter{
+    font-weight: bold;
+}
+.cart{
+    visibility: hidden;
+}
